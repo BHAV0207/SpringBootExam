@@ -1,5 +1,4 @@
 package com.midterm.bhav.DTO;
-import java.util.Date;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +11,6 @@ import lombok.Setter;
 public class DTOcart {
     private int id;
     private int userId;
-    private Date date;
+    private String date;
     private product[] products;
 }

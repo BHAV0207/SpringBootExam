@@ -1,5 +1,7 @@
 package com.midterm.bhav.Services;
 
+
+
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
@@ -42,4 +44,8 @@ public class ServiceCart {
         var response = restTemplate.exchange(url + "/carts/" + id ,HttpMethod.DELETE ,  null ,DTOcart.class);
         return response.getBody();
     }
+
+    // public DTOcart getByDate(Date date){
+    //     var response = restTemplate.getForObject(url + "/carts", null)
+    // }
 }
