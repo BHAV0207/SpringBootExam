@@ -62,7 +62,7 @@ public class ControllerCart {
     }
 
      @GetMapping("/carts/date")
-    public DTOcart[] getByDate(@RequestParam("start") String start, @RequestParam("end") String end){
+    public DTOcart[] getByDate(@PathVariable("start") String start, @PathVariable("end") String end){
         return sc.getByDate(start, end);
     }
     
