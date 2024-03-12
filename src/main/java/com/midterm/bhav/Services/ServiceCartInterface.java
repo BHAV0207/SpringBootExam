@@ -1,7 +1,5 @@
 package com.midterm.bhav.Services;
 
-
-
 import com.midterm.bhav.DTO.DTOcart;
 
 public interface ServiceCartInterface {
@@ -17,5 +15,5 @@ public interface ServiceCartInterface {
 
     public DTOcart delCart(int id);
 
-   // public DTOcart[] getByDate(String Sdate);
+     public DTOcart getByDate(String start, String end);
 }
